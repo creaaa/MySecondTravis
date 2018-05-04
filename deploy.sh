@@ -15,4 +15,4 @@ git config user.name "Travis-CI"
 git init
 git add .
 git commit -m "Deploy to GitHub Pages"
-git push --force --quiet "https://${GITHUB_TOKEN}@github.com/creaaa/YetAnotherSecondTravis.github.io.git" master:master > /dev/null 2>&1
+git push --force --quiet "https://${GITHUB_TOKEN}@github.com/creaaa.github.io/YetAnotherSecondTravis.git" master:master > /dev/null 2>&1
