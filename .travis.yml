@@ -3,8 +3,7 @@ node_js:
 - 8.11.1
 sudo: false
 script:
-- '[ "$TRAVIS_BRANCH" == master ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && bash
-  ./deploy.sh'
+- '[ "$TRAVIS_BRANCH" == master ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && bash ./deploy.sh'
 cache:
   directories:
   - node_modules
@@ -12,7 +11,7 @@ cache:
 deploy:
   provider: pages
   skip-cleanup: true
-  # github-token: OXy41WAo4kgKCUBYa9ESIoI6hrirnUYrHlhQ493ewasBbZYq3WVD95Tmouo2+ByZW4BcZ7d7zN6HJ2jbfIF8CqrX0dGLCLxyCFSlC/89W+uPmF92sfEudalCSV7clYXA3Te6s0/xa2J2iGnrGvu/9ePA63wYZGPfsE/NVlVm5YmTyP3h0liCXRG0TJkKUlg649KP3YyldEnwKlQsARGX92uvC7exk8On2ouCWmuu1Un+Z6TPxrfz8DM8Xsnc2+NQWTWZgwwwnWpvK94DkGHUQpdIHjCOhaZ2+sd6r+/SIudNTHn/5BxQEHyvSjEUAYr2oJBF0kIBLPv5SVC1AHUxZX6kS+yzPWfD45V31KYPn6HOrIN8npP2IDVsV7PE1Tu4tmsGaZ/NcqpWmro4q+5GNTV9vCv0WEcrqy/48su6ZxFJDuaRzXMS+fk9dAly6vItARvG3E5YG+dXL2L5x3iwmNDDMH+bGaMcuKvIWerLxmKFYVuFCnJ8DvTJFe+giyIxGjhsuwekCwdIHrNiHI0LfW9STeZXoeznYUhC+lmg/csq/3vY3GwBzlo8tbbUESh9aFbc1wNaIfKkQDFSpIcoBb+syrxgPRGKouQP1vm02b4ITEX/x8pU2lk59V+gS5GFdNkyJeuC7W5MpT/so69Lap/yODcBsLmkEOJzmYg+UBg=
+  github-token: OXy41WAo4kgKCUBYa9ESIoI6hrirnUYrHlhQ493ewasBbZYq3WVD95Tmouo2+ByZW4BcZ7d7zN6HJ2jbfIF8CqrX0dGLCLxyCFSlC/89W+uPmF92sfEudalCSV7clYXA3Te6s0/xa2J2iGnrGvu/9ePA63wYZGPfsE/NVlVm5YmTyP3h0liCXRG0TJkKUlg649KP3YyldEnwKlQsARGX92uvC7exk8On2ouCWmuu1Un+Z6TPxrfz8DM8Xsnc2+NQWTWZgwwwnWpvK94DkGHUQpdIHjCOhaZ2+sd6r+/SIudNTHn/5BxQEHyvSjEUAYr2oJBF0kIBLPv5SVC1AHUxZX6kS+yzPWfD45V31KYPn6HOrIN8npP2IDVsV7PE1Tu4tmsGaZ/NcqpWmro4q+5GNTV9vCv0WEcrqy/48su6ZxFJDuaRzXMS+fk9dAly6vItARvG3E5YG+dXL2L5x3iwmNDDMH+bGaMcuKvIWerLxmKFYVuFCnJ8DvTJFe+giyIxGjhsuwekCwdIHrNiHI0LfW9STeZXoeznYUhC+lmg/csq/3vY3GwBzlo8tbbUESh9aFbc1wNaIfKkQDFSpIcoBb+syrxgPRGKouQP1vm02b4ITEX/x8pU2lk59V+gS5GFdNkyJeuC7W5MpT/so69Lap/yODcBsLmkEOJzmYg+UBg=
   keep-history: true
   on:
     branch: master
