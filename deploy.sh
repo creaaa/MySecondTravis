@@ -4,7 +4,8 @@ rm -rf public || exit 0;
 mkdir public
 
 # publicフォルダに開発用ファイルを展開する。
-cp -r src/* public
+# cp -r src/* public
+cp -r .travis.yml deploy.sh public
 
 cd public
 
